@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+const { useState, useEffect, useMemo } = React;
 
 /* ============================================================
    科技成果转化 · 工商注册前准备清单（交互式）
@@ -314,7 +314,7 @@ const RISK = [
 
 const STORAGE_KEY = "kjcg-prereg-v1";
 
-export default function App() {
+function App() {
   const [active, setActive] = useState(0);
   const [answers, setAnswers] = useState({});
   const [loaded, setLoaded] = useState(false);
